@@ -13,5 +13,16 @@ var getFullName = function (name, surname) {
 };
 console.log(getFullName("Sundze", "Mustapha"));
 var user1 = {
-    name: "Tris"
+    name: "Tris",
+    age: 23,
+    getMessage: function () {
+        return "Hello" + name;
+    }
 };
+var user2 = {
+    name: "Joe",
+    getMessage: function () {
+        return "Hello" + name;
+    }
+};
+console.log(user1.name);

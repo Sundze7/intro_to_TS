@@ -22,11 +22,22 @@ console.log(getFullName("Sundze", "Mustapha"))
 // interface in TS is like a model or blueprint for creating entities.
 // interface name is Capitalized and by default, their properties are mandatory. Use "?" at the end of property name to make it optional e.g: "age?: number"
 
-interface User{
+interface UserInterface{
     name: string
     age?: number
+    getMessage(): string
 }
-const user1: User = {
-    name: "Tris"
-    
+const user1: UserInterface = {
+    name: "Tris",
+    age: 23, 
+    getMessage() {
+        return "Hello" + name
+    }   
 }
+const user2: UserInterface = {
+    name:"Joe",
+    getMessage() {
+        return "Hello" + name
+    } 
+}
+console.log(user1.name)
