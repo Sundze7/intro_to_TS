@@ -41,3 +41,12 @@ const user2: UserInterface = {
     } 
 }
 console.log(user1.name)
+
+//4. UNION OPERATOR => |
+// it is used to combine data types. Mostly used to check if variable is null, after fetching data
+
+let userName: string = "Alex"
+let pageName: string | number = '1' 
+let errorMessage: string | null = null
+
+let user: UserInterface | null =null

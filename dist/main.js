@@ -26,3 +26,9 @@ var user2 = {
     }
 };
 console.log(user1.name);
+//4. UNION OPERATOR => |
+// it is used to combine data types. Mostly used to check if variable is null, after fetching data
+var userName = "Alex";
+var pageName = '1';
+var errorMessage = null;
+var user = null;
