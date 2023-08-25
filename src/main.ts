@@ -50,3 +50,18 @@ let pageName: string | number = '1'
 let errorMessage: string | null = null
 
 let user: UserInterface | null =null
+
+// 5. Type Aliasing
+// they are typically defined at the top and used globally in ur code. Just like interfaces, they begin with a capital letter
+type ID = string
+type Pswd = string
+type Random = string
+type MaybeRandom = string | null
+
+interface EmployeeInterface {
+    id: ID
+    password: Pswd
+}
+
+const rate: Random[] = ['dragon', 'coffee']
+const money: MaybeRandom = 'dollars'

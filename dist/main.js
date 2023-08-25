@@ -32,3 +32,5 @@ var userName = "Alex";
 var pageName = '1';
 var errorMessage = null;
 var user = null;
+var rate = ['dragon', 'coffee'];
+var money = 'dollars';
