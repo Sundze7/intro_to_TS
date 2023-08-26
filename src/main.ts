@@ -65,3 +65,16 @@ interface EmployeeInterface {
 
 const rate: Random[] = ['dragon', 'coffee']
 const money: MaybeRandom = 'dollars'
+
+// 6. Type VOID (a set of undefined and null)
+// void returns no value
+
+const doSomething = (): void => {
+    console.log("doSomething")
+}
+
+// 7.Type Any. This turns off TS checks
+// Dont any to ignore bugs. Any is not a solution but a start of bigger problems
+
+let foo: any = "foo"
+console.log(foo.bar())

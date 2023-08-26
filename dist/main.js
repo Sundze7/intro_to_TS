@@ -34,3 +34,12 @@ var errorMessage = null;
 var user = null;
 var rate = ['dragon', 'coffee'];
 var money = 'dollars';
+// 6. Type VOID (a set of undefined and null)
+// void returns no value
+var doSomething = function () {
+    console.log("doSomething");
+};
+// 7.Type Any. This turns off TS checks
+// Dont any to ignore bugs. Any is not a solution but a start of bigger problems
+var foo = "foo";
+console.log(foo.bar());
