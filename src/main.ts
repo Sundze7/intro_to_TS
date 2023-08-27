@@ -78,3 +78,26 @@ const doSomething = (): void => {
 
 let foo: any = "foo"
 console.log(foo.bar())
+
+// 8. Type never
+// a function with never cannot be executed to the end
+
+const something = (): never => {
+    throw "never"
+}
+
+//9. Type unknown
+// we cannot assign unkown to other data types
+
+//10. Type assertion (as)
+// it is used to convert from one data type to another
+
+let vAny: any = 10
+let vUnknown: unknown = 10
+
+let s1: string = vAny;
+let s2: string = vUnknown as string
+
+// to coonvert from string to number, first convert string to unknown, then to number
+let pageNum: string = '1'
+let numericPageNum: number = (pageNum as unknown) as number
